@@ -1,0 +1,7 @@
+﻿@model OrnekSite.Models.Cart
+
+<a href="~/Views/Cart/Summary1.cshtml">
+    <span class="icon-shopping-cart">[@Model.Cartlines.Count] Adet</span>
+    <span class="badge badge-warning">@Model.Total().ToString("c")</span>
+
+</a>

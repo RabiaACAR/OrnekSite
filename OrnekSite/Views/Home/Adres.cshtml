@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Adres";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div id="sidebar" class="span3">
+        <div class="well well-small">
+            <ul class="nav nav-list">
+                @Html.Action("_CategoryList", "Category")
+                <li style="border:0"> &nbsp;</li>
+                @Html.Action("Summary", "Cart")
+            </ul>
+        </div>
+
+
+        @Html.Action("_FeaturedProductList", "Home")
+
+
+    </div>
+    <div class="span9">
+        <ul class="breadcrumb">
+            <li><a href="/Home/Index"> Anasayfa </a><span class="divider">/</span></li>
+            <li class="active">Adres</li>
+        </ul>
+        <div class="well well-small">
+            <h4>Adres : Kayıdağı Mahallesi Atilla Caddesi No:37 Ataşehir,iSTANBUL</h4>
+            <h4>Telefon : 0216 345 45 45</h4>
+            <hr class="softn clr">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3011.7979708314456!2d29.14484156334793!3d40.98590450737266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacf55fe06cd0d%3A0x34e11d35e04fb71c!2zS2F5xLHFn2RhxJ_EsSwgQXRpbGxhIENkLiwgMzQ3NTUgQXRhxZ9laGlyL8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1609587609708!5m2!1str!2str" 
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+
+
+        </div>
+    </div>
+</div>
+
